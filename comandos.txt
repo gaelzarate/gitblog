@@ -2,3 +2,23 @@ curso de git platzi
 
 
 git init : inicializamos el proyecto de git
+
+git status: muestra el estado de la rama
+
+git add nombrearchivo: agrega el arcchivo listo para comit
+
+git rm archivo: 
+
+git rm --cached archivo: deshacer el add de ese archivo
+
+git commit -m "mensaje del comit"
+
+git config: muestara las configuraciones de git
+
+un guion es para usar una letra dos guiones -- es para una palabra --help
+
+//configurar el usuario para poder commitear
+git config --global user.name "nombre de usuario"
+git config --global user.email "correo@gmail.com"
+
+code archivo: abre el archivo con visual studio codde
