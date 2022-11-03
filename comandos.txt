@@ -1,0 +1,4 @@
+curso de git platzi
+
+
+git init : inicializamos el proyecto de git
