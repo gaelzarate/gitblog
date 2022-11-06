@@ -6,6 +6,7 @@ git init : inicializamos el proyecto de git
 git status: muestra el estado de la rama
 
 git add nombrearchivo: agrega el arcchivo listo para comit
+git add. agrega todos los archivos que estan en ese directorio
 
 git rm archivo: 
 
@@ -21,4 +22,32 @@ un guion es para usar una letra dos guiones -- es para una palabra --help
 git config --global user.name "nombre de usuario"
 git config --global user.email "correo@gmail.com"
 
-code archivo: abre el archivo con visual studio codde
+code archivo: abre el archivo con visual studio codde 
+
+git log nombrearchivo: muestra el historial de ese archivo
+
+git show nombrearchivo: muestra los cambios mas recientes comparando el archivo modificado con el anterior
+
+salir del show : q
+salir del mensajepara commit: esc+shitf+zz
+ 
+//para comparar dos commits en especifico
+primero damos un git log y copiamos los codigos de los commit a comparar
+git diff codigo1 codigo2 : compara lo que tenia en commit 1 con lo de commit2
+
+
+git branch nombrerama: crea una nueva rama
+git  checkout nombrerama: te mueves a la nueva rama
+
+git reset codigo --hard: vuelve a ese estado todo y borra lo que tiene despues incluyendo el staging
+git reset codigo --soft: vuelve a ese estado pero mantiene el staging
+git reset HEAD: Este es el comando para sacar archivos del área de staging
+
+git log --stat: muestra los cambios echos en cada commit
+
+git checkout codigo_commit nombre_archivo: restaura el archivo a la version de ese commit
+si queremos mantener esos cambios damos add y commit
+git checkout master nombre_archivo: restaura el archivo a la version del ultimo commit de la rama master
+
+git clone url: clona un repositorio remoto
+git push: mandar mis cambios al repo remoto
