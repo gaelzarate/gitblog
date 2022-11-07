@@ -41,7 +41,7 @@ git  checkout nombrerama: te mueves a la nueva rama
 
 git reset codigo --hard: vuelve a ese estado todo y borra lo que tiene despues incluyendo el staging
 git reset codigo --soft: vuelve a ese estado pero mantiene el staging
-git reset HEAD: Este es el comando para sacar archivos del área de staging
+git reset head nombrearchivo: Este es el comando para sacar archivos del área de staging
 
 git log --stat: muestra los cambios echos en cada commit
 
@@ -51,3 +51,6 @@ git checkout master nombre_archivo: restaura el archivo a la version del ultimo 
 
 git clone url: clona un repositorio remoto
 git push: mandar mis cambios al repo remoto
+git fetch: Lo usamos para traer actualizaciones del servidor remoto y guardarlas en nuestro repositorio local. 
+git merge: También usamos el comando git merge con servidores remotos. Lo necesitamos para combinar los últimos cambios del servidor remoto y nuestro directorio de trabajo. 
+git pull: Básicamente, git fetch y git merge al mismo tiempo.
