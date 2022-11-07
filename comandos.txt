@@ -29,6 +29,7 @@ git log nombrearchivo: muestra el historial de ese archivo
 git show nombrearchivo: muestra los cambios mas recientes comparando el archivo modificado con el anterior
 
 salir del show : q
+git commit sin mensaje
 salir del mensajepara commit: esc+shitf+zz
  
 //para comparar dos commits en especifico
@@ -54,3 +55,9 @@ git push: mandar mis cambios al repo remoto
 git fetch: Lo usamos para traer actualizaciones del servidor remoto y guardarlas en nuestro repositorio local. 
 git merge: También usamos el comando git merge con servidores remotos. Lo necesitamos para combinar los últimos cambios del servidor remoto y nuestro directorio de trabajo. 
 git pull: Básicamente, git fetch y git merge al mismo tiempo.
+
+git commit -am "mensaje": para saltarse el add
+git commit -a: abre el vim, esc i: insertas el mensaje, esc shift+zz para salir
+
+git branch nombrerama: crea la nueva rama
+git checkout nombrerama: me mueve a la rama creada
