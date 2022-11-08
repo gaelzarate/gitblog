@@ -61,3 +61,5 @@ git commit -a: abre el vim, esc i: insertas el mensaje, esc shift+zz para salir
 
 git branch nombrerama: crea la nueva rama
 git checkout nombrerama: me mueve a la rama creada
+
+fusion de ramas
