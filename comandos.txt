@@ -63,3 +63,30 @@ git branch nombrerama: crea la nueva rama
 git checkout nombrerama: me mueve a la rama creada
 
 fusion de ramas
+git checkout master: me posiciono en la rama master 
+git merge cabecera: traigo los cambios de la rama cabecera
+git merge --abort: revertir merge
+
+conflictos con merge. surgen cuando se hicieron cambios en el mismo lugar en diferentes ramas
+al aparecer un conflicto visual studio nos permitira seleccionar que cambio deseamos mantener
+despues commiteamos los cambios seleccionados manualmente y listo
+
+Vincular git y github
+crear un repositorio en nuestro github y copiar la url
+git remote add origin URL: vincula nuestro git local con el repositorio
+cuando es la primera vez en estos pasos nos pedira loguearnos para saber quien sube los cambios.
+git remote -v: para verificar que estamos conectados al repositorio remoto
+cambiamos el nombre de nuestrarama principal a main ya que github la maneja asi
+git branch -M main
+
+git push origin main: para subir nuestros cambios, pero si creamos un readme en el repositorios 
+nos causara conflicto de historias, para solucionarlo se usa el siguiente comando;
+git pull origin main --allow-unrelated-histories: solucionamos y nuevamente. git push origin main
+
+tambien podemos hacer cambios y commits desde github solo damos en editar y listo
+para actualizar nuestro archivo local podemos hacer; git pull origin main
+
+git remote remove origin: elimina la conexion con el repositorio remoto(no lo he probado)
+ 
+clonar un repositorio privado 
+git clone https://TOKEN:x-oauth-basic@github.com/seseccoaxaca/sitiooficialsesecc1.0.git
