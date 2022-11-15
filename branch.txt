@@ -1,0 +1,30 @@
+Comandos para manejo de ramas en GitHub
+Crear una rama: git branch branchName
+
+Movernos a otra rama: git checkout branchName
+
+Crear una rama en el repositorio local: git branch nombre-de-la-rama o git checkout -b nombre-de-la-rama.
+
+Publicar una rama local al repositorio remoto: git push origin nombre-de-la-rama.
+
+git show-branch: muestra las ramas  que existen y su historia resumido
+git show-branch --all: muestra las ramas  que existen y su historia completa
+
+
+Recuerda que podemos ver gráficamente nuestro entorno y flujo de trabajo local 
+con Git utilizando el comando gitk. Gitk fue el primer visor gráfico que se 
+desarrolló para ver de manera gráfica el historial de un repositorio de Git.
+
+Cómo agregar colaboradores en Github
+Solo debemos entrar a la configuración de colaboradores de nuestro proyecto. Se encuentra en:
+Repositorio > Settings > Collaborators
+
+Si, como colaborador, agregaste erróneamente el mensaje del commit, lo puedes cambiar de la siguiente manera:
+
+Hacer un commit con el nuevo mensaje que queremos, esto nos abre el editor de texto de la terminal:
+git commit —amend
+Corregimos el mensaje
+Traer el repositorio remoto
+git pull origin master
+Ejecutar el cambio
+git push --set-upstream origin master
