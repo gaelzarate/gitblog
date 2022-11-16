@@ -32,6 +32,11 @@ body{
     vertical-align: middle;
 }
 
+#footer{
+    background-color: #4a547d;
+    color: white;
+}
+
 
 #cabecera #tagline
 {
