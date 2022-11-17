@@ -32,6 +32,13 @@ body{
     vertical-align: middle;
 }
 
+#footer{
+    background-color: #757c95;
+    color: white;
+    padding: 4px;
+    padding-left: 10px;
+}
+
 
 #cabecera #tagline
 {
