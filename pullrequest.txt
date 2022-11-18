@@ -1,0 +1,30 @@
+Pull request es una funcionalidad de Github (en Gitlab llamada merge request y en Bitbucket 
+push request), en la que un colaborador pide que revisen sus cambios antes de hacer merge a 
+una rama, normalmente master (ahora conocida como main).
+
+Al hacer un pull request, se genera una conversación que pueden seguir los demás usuarios del 
+repositorio, así como autorizar y rechazar los cambios.
+
+para hacer uso de esta funcion en github es my sencillo
+vamos a pull request y creamos una nueva
+elegimos las ramas que queremos hacer merge y listo, podemos agregar colaboradores y abrir una 
+conversacion donde se hacen arreglos y al final aprobar el merge y llevarlo a cabo
+
+-----------------------------------
+Los forks o bifurcaciones son una característica única de GitHub en la que se crea una copia 
+exacta del estado actual de un repositorio directamente en GitHub. Este repositorio podrá servir 
+como otro origen y se podrá clonar (como cualquier otro repositorio). En pocas palabras, lo 
+podremos utilizar como un nuevo repositorio git cualquiera
+
+para actualizar el repositorio forqueado podemos simmplemente entrar a nuestro github y ver los cambios
+que el repositorio original ha hecho hacer un pulreques y hacer el merge
+
+hay una segunda forma que es desde el entorno local
+este lo tenemos vinculado al repositorio forqueado
+git remote add <nombre_del_remoto> <url_del_remoto> : crea un enlace remoto
+git remote add upstream https://URL: ejemplo la url debe ser la del repositorio original no del forquedo
+
+git pull <remoto> <rama>: jala lo que tengo en la rama main de repositorio original
+git pull upstream main: ejemplo, este pull nos traerá los cambios del remoto, estará al día en el proyecto.
+
+finalmente se hace un push al main remoto este lo hara en el reositorio forkeado
