@@ -143,3 +143,19 @@ El comando clean actúa en archivos sin seguimiento, este tipo de archivos son a
 directorio de trabajo, pero que aún no se han añadido al índice de seguimiento de repositorio con el comando add.
 git clean --dry-run: Revisar que archivos no tienen seguimiento.
 git clean -f: Eliminar los archivos listados de no seguimiento
+
+cherry pick
+git cherry-pick codigo: trae el cambio del commit de otra rama
+
+git reflog: si deseas ver cómo has modificado la historia
+git checkout eff544f: Puedes moverte sin realizar ningún cambio al commit exacto de la ref
+
+git reset --hard eff544f : Perderá todo lo que se encuentra en staging y en el Working directory y se 
+moverá el head al commit eff544f
+git reset --soft eff544f : Te recuperará todos los cambios que tengas diferentes al commit eff544f,
+ los agregará al staging area y moverá el head al commit eff544f
+ git merge: Puedes hacer merge de un commit en específico, funciona igual que con una branch, pero te hace 
+ el merge del estado específico del commit mandado
+git merge eff544f: Fusionará en un nuevo commit la historia de main con el momento específico en el que vive
+git reset --soft HashDelHEAD te mantiene lo que tengas en staging ahí.
+git reset --hard HashDelHEAD resetea absolutamente todo incluyendo lo que tengas en staging.
