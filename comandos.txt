@@ -96,4 +96,12 @@ cambiar de usuario local
 git config -l: muestra mi configuracion local actual
 git config --global user.email"example": cambia al nuevo nombre
 
-master 1
+Pasos para subir un repositorio a GitHub Pages
+Debemos tomar la llave SSH y hacer un git clone #SSHexample en mi computador local (Home).
+Luego, accederemos a la carpeta nueva que aparece en nuestra máquina local.
+Creamos un nuevo archivo que se llame index.html
+Guardamos los cambios, hacemos un git pull y seguido de esto un git push a master.
+Vamos a las opciones de settings de este repositorio y, en la parte de abajo, en la columna Github Pages, configuramos el source o fuente para que traiga la rama master
+Guardamos los cambios.
+
+experimento 1
