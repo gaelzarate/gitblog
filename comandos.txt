@@ -115,3 +115,31 @@ git checkout main: volvemos a main
 git rebase experimento: se hace lo mismo con main para traer los cambios que se hicieron en la otra rama
 por ultimo podemos borrar la rama
 
+git stash
+El comando git stash guarda el trabajo actual del Staging en una lista diseñada para ser temporal llamada Stash, para que pueda ser recuperado en el futuro.
+
+Para agregar los cambios al stash se utiliza el comando: git stash
+git stash save "mensaje identificador del elemento del stashed":poner un mensaje
+git stash list
+git stash pop: recuperamos los cambios del stash
+git stash pop stash@{<num_stash>}: especifico
+git stash apply stash@{<num_stash>}:Para retomar los cambios de una posición específica del Stash
+
+git stash branch <nombre_de_la_rama>: crea una rama con el stash dentro
+git stash branch nombre_de_rama stash@{<num_stash>}: stash especifico
+
+git stash drop:elimina el stash
+git stash drop stash@{<num_stash>}
+git stash clear:elimina todos los elementos del stash
+
+El cambio más reciente (al crear un stash) SIEMPRE recibe el valor 0 y los que estaban antes aumentan su valor.
+Al crear un stash tomará los archivos que han sido modificados y eliminados. Para que tome un archivo creado 
+es necesario agregarlo al Staging Area con git add [nombre_archivo] con la intención de que git tenga un 
+seguimiento de ese archivo, o también utilizando el comando git stash -u (que guardará en el stash los archivos
+que no estén en el staging).
+Al aplicar un stash este no se elimina, es buena práctica eliminarlo
+
+El comando clean actúa en archivos sin seguimiento, este tipo de archivos son aquellos que se encuentran en el 
+directorio de trabajo, pero que aún no se han añadido al índice de seguimiento de repositorio con el comando add.
+git clean --dry-run: Revisar que archivos no tienen seguimiento.
+git clean -f: Eliminar los archivos listados de no seguimiento
