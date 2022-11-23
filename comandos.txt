@@ -95,3 +95,5 @@ git clone https://TOKEN:x-oauth-basic@github.com/seseccoaxaca/sitiooficialsesecc
 cambiar de usuario local
 git config -l: muestra mi configuracion local actual
 git config --global user.email"example": cambia al nuevo nombre
+
+master 1
