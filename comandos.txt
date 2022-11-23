@@ -104,12 +104,14 @@ Guardamos los cambios, hacemos un git pull y seguido de esto un git push a maste
 Vamos a las opciones de settings de este repositorio y, en la parte de abajo, en la columna Github Pages, configuramos el source o fuente para que traiga la rama master
 Guardamos los cambios.
 
-experimento 1
+rebase
+crear una nueba rama
+git branch experimento
+git checkout experimento
+hacer cambios y commi ts
+git rebase main; hace rebase de main, es como si transportara la rama experimento a donde esta el main actual
 
-experimento 2
+git checkout main: volvemos a main
+git rebase experimento: se hace lo mismo con main para traer los cambios que se hicieron en la otra rama
+por ultimo podemos borrar la rama
 
-master 1
-
-master 2
-
-historias para rebase
