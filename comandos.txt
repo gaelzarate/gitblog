@@ -159,3 +159,25 @@ git reset --soft eff544f : Te recuperará todos los cambios que tengas diferente
 git merge eff544f: Fusionará en un nuevo commit la historia de main con el momento específico en el que vive
 git reset --soft HashDelHEAD te mantiene lo que tengas en staging ahí.
 git reset --hard HashDelHEAD resetea absolutamente todo incluyendo lo que tengas en staging.
+
+Remendar un commit con amend puede modificar el commit más reciente (enmendar) en la misma rama. Lo ejecutamos así:
+git add -A : Para hacer uso de amend los archivos deben de estar en staging
+git commit --amend : Remendar último commit
+
+busqueda
+on git grep -n color nos saldrá un output el cual nos dirá en qué línea está lo que estamos buscando.
+Con git grep -c color nos saldrá un output el cual nos dirá cuántas veces se repite esa palabra y en qué archivo.
+Si queremos buscar cuántas veces utilizamos un atributo de HTML lo hacemos con git grep -c "<p>".
+
+ git log -S "cabecera": busca cuantas veces se ha usado la palabra cabecera en los commits
+
+git shortlog -sn: muestra cuantos commit han hecho cada miembro del equipo.
+git shortlog -sn --all: muestra cuantos commit han hecho cada miembro del equipo, hasta los que han sido eliminados.
+git shortlog -sn --all --no-merge: muestra cuantos commit ha hecho cada miembro, quitando los eliminados sin los merges.
+git blame ARCHIVO: muestra quien hizo cada cosa línea por línea.
+git COMANDO --help:muestra como funciona el comando.
+git blame ARCHIVO -Llinea_inicial,linea_final: muestra quien hizo cada cosa línea por línea, indicándole desde qué línea ver. Ejemplo -L35,50.
+git branch -r: se muestran todas las ramas remotas.
+git branch -a: se muestran todas las ramas, tanto locales como remotas.
+git config --global alias.stats "shortlog -sn": crea un alias de un comando
+git stats: para ejecutarlo
